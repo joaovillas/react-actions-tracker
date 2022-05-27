@@ -1,9 +1,18 @@
 {
   "name": "@joaovillas/react-actions-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "joaovillas",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "tracking",
+    "events",
+    "react",
+    "ts",
+    "amplitude",
+    "event",
+    "track"
+  ],
   "scripts": {
     "build": "npm run test && rollup -c",
     "build:watch": "rollup -cw",
@@ -48,5 +57,13 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/joaovillas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaovillas/react-actions-tracker.git"
+  },
+  "homepage": "https://github.com/joaovillas/react-actions-tracker#readme",
+  "bugs": {
+    "url": "https://github.com/joaovillas/react-actions-tracker/issues"
   }
 }
