@@ -5,7 +5,10 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "rollup -c"
+    "build": "npm run test && rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "main": "dist/cjs.index.js",
   "module": "dist/esm/index.js",
@@ -13,18 +16,26 @@
   "files": [
     "dist"
   ],
+
   "dependencies": {
     "@types/react": "^18.0.9",
     "react": "^18.1.0",
-    "react-intersection-observer": "^9.1.0",
-    "typescript": "^4.7.2"
+    "react-dom": "^18.1.0",
+    "react-intersection-observer": "^9.1.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "rollup": "^2.74.1",
     "rollup-plugin-dts": "^4.2.2",
-    "tslib": "^2.4.0"
+    "ts-jest": "^28.0.3",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.2"
   }
 }
