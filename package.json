@@ -1,5 +1,5 @@
 {
-  "name": "@joaovillas/react-actions-tracker",
+  "name": "react-actions-tracker",
   "version": "1.0.1",
   "author": "joaovillas",
   "license": "MIT",
@@ -54,9 +54,6 @@
     "ts-jest": "^28.0.3",
     "tslib": "^2.4.0",
     "typescript": "^4.7.2"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/joaovillas"
   },
   "repository": {
     "type": "git",
