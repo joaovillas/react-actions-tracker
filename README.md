@@ -59,7 +59,7 @@ watch | `any` | undefined | `true`  | Prop used with trackChange parameter, this
 eventMetadata | `object` | { } | `true`  | This prop is used to explain and attach data that you make sense to your tracking activity
 eventDebug | `boolean` | false | `true`  | This prop is used debug the events you want to track, only for test and development purposes
 threshold | ` number or number[]` | undefined | `true`  | This prop is used to give a porcentage in users screen the target element appears. Ex: you want to track when the target element appears 50% in users screen, you should use values between 0 to 1, so the threshold should be P `0.5`
-triggerOnce | `boolean` | true | `true`  |  If you want to trigger the when a component appeared more the one time you should use false value
+triggerOnce | `boolean` | true | `true`  |  If you want to track everytime the target component appears on the screen, you should set `triggerOnce=false`
 eventPage | `string` | undefined | `true`  |  If you want to put some data to be more especific, use this event to attach pageName to your events.
 
 ## Props - EventTracker
