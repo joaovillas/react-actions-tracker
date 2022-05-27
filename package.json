@@ -8,7 +8,8 @@
     "build": "npm run test && rollup -c",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run build"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -16,9 +17,11 @@
   "files": [
     "dist"
   ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
   "dependencies": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
     "react-intersection-observer": "^9.1.0"
   },
   "devDependencies": {
