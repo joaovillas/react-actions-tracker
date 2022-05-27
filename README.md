@@ -9,11 +9,11 @@ But now, imagine you just have to put a provider over you root application and j
 ## Installation
 
 ```bash
-npm install @joaovillas/react-actions-tracker
+npm install react-actions-tracker
 ```
 or 
 ```bash
-yarn add @joaovillas/react-actions-tracker
+yarn add react-actions-tracker
 ```
 
 ## Interactive Demo.
