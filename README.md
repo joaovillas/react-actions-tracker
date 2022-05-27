@@ -22,11 +22,9 @@ Coming soon
 ## Wrap your application with the provider
 
 ```javascript
-<React.StrictMode>
   <EventTrackerProvider trackEvent={(payload) => null}>
     <App />
   </EventTrackerProvider>
-</React.StrictMode>
 ```
 ## Then just add the EventTracker component over the target component.
 
