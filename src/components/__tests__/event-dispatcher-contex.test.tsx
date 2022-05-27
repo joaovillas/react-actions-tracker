@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 import EventTracker from "../event-tracker";
 import EventTrackerProvider from "../event-tracker-context";

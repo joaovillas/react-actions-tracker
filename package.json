@@ -1,41 +1,47 @@
 {
   "name": "@joaovillas/react-actions-tracker",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "author": "joaovillas",
   "license": "MIT",
   "private": false,
   "scripts": {
     "build": "npm run test && rollup -c",
+    "build:watch": "rollup -cw",
+    "prepublishOnly": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "prepublishOnly": "npm run build"
+    "test:coverage": "jest --coverage"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
   "files": [
+    "package.json",
+    "README.md",
     "dist"
   ],
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
-  },
+  "types": "dist/index.d.ts",
   "dependencies": {
     "react-intersection-observer": "^9.1.0"
   },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
   "devDependencies": {
-    "@types/react": "^18.0.9",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@types/jest": "^27.5.1",
+    "@types/react": "^18.0.9",
     "jest": "^28.1.0",
     "jest-environment-jsdom": "^28.1.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "rollup": "^2.74.1",
     "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "ts-jest": "^28.0.3",
     "tslib": "^2.4.0",
     "typescript": "^4.7.2"

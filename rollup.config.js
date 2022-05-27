@@ -1,9 +1,9 @@
-import resolve from "@rollup/plugin-node-resolve";
-import commonjs from "@rollup/plugin-commonjs";
-import typescript from "@rollup/plugin-typescript";
-import dts from "rollup-plugin-dts";
-
 const packageJson = require("./package.json");
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import typescript from "@rollup/plugin-typescript";
+import external from "rollup-plugin-peer-deps-external";
+import dts from "rollup-plugin-dts";
 
 export default [
   {
@@ -12,18 +12,18 @@ export default [
       {
         file: packageJson.main,
         format: "cjs",
-        sourcemap: true,
       },
       {
         file: packageJson.module,
         format: "esm",
-        sourcemap: true,
       },
     ],
+    external: ["react", "react-dom"],
     plugins: [
+      external(),
       resolve(),
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.json", exclude: ["**/__tests__", "**/*.test.ts", "**/*.test.tsx"] }),
+      typescript({ tsconfig: "./tsconfig.json"}),
     ],
   },
   {
