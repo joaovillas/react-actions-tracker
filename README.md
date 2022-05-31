@@ -60,7 +60,7 @@ threshold | ` number or number[]` | undefined | `true`  | This prop is used to g
 triggerOnce | `boolean` | true | `true`  |  If you want to track everytime the target component appears on the screen, you should set `triggerOnce=false`
 eventPage | `string` | undefined | `true`  |  If you want to put some data to be more especific, use this event to attach pageName to your events.
 
-## Props - EventTracker
+## Props - EventTrackerProvider
 
 Name | Type | Default | Optional | Desc
 ---- | ---- | ------- | -------- | ----
